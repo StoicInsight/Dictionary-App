@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 function App() {
 
   const [ searchInput, setSearchInput ] = useState('')
+  const [ getData, setGetData ] = useState([])
   const [ display, setDisplay ] = useState([])
 
   const updateSearch = (e) => {
@@ -19,15 +20,18 @@ function App() {
 
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput}`)
       .then(response => response.json())
-      .then(data => console.log(data[0]))
-
+      .then(data => setGetData(data))
   }   
+
+  useEffect(() => {
+    // console.log(getData)
+  },[ getData ])
   
   return (
     <div className="App">
       <Navigation/>
       <SearchInput search={updateSearch} submit={searchDictionary}/>
-      <Display/>
+      <Display display={getData}/>
     </div>
   );
 }
