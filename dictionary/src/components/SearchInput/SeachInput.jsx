@@ -11,7 +11,7 @@ const SeachInput = ({ search, submit }) => {
         placeholder='Search dictionary...'
         onChange={search}
         />
-        <button type='submit'> <img src='../../assets/images/icon-search.svg' alt="" /> </button>
+        <SearchIcon/> 
       </form>
 
     </div>

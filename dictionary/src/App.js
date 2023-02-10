@@ -15,9 +15,8 @@ function App() {
     setSearchInput(e.target.value)
   }
 
-  const searchDictionary = (e) => {
+  const searchDictionary = async(e) => {
     e.preventDefault()
-
     fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput}`)
       .then(response => response.json())
       .then(data => setGetData(data))
