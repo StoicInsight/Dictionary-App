@@ -11,7 +11,7 @@ const SeachInput = ({ search, submit }) => {
         placeholder='Search dictionary...'
         onChange={search}
         />
-        <SearchIcon/> 
+        <SearchIcon className='search-icon'/> 
       </form>
 
     </div>

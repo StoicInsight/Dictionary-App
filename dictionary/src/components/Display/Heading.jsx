@@ -8,7 +8,7 @@ export const Heading = ({display}) => {
   const capitalizeString = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1)
   }
-  
+
   return (
     <div>
       <div className='heading'>
