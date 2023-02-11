@@ -6,9 +6,12 @@ export const Definition = ({ display }) => {
       {display[0].meanings.map((def) => {
         return (
           <div className='definition'>
-            <h1>{def.partOfSpeech}</h1>
+            <div className="part">
+              <h1>{def.partOfSpeech}</h1>
+              <div className="line"></div>
+            </div>
             <div className="meaning-wrap">
-              <h5>Meaning</h5>
+              <p>Meaning</p>
               <ul>
                 <li>{def.definitions[0].definition}</li>
               </ul>
