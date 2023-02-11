@@ -1,9 +1,8 @@
 import Navigation from './components/Navigation/Navigation';
 import Display from './components/Display/Display';
-import SearchInput from './components/SearchInput/SeachInput'
-import './App.css'
-import { useState, useEffect } from 'react'
-
+import SearchInput from './components/SearchInput/SeachInput';
+import './App.css';
+import { useState, useEffect } from 'react';
 
 function App() {
 
