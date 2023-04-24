@@ -21,9 +21,6 @@ function App() {
       .then(data => setGetData(data))
   }   
 
-  useEffect(() => {
-    // console.log(getData)
-  },[ getData ])
   
   return (
     <div className="App">
