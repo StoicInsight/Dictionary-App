@@ -2,13 +2,14 @@ import Navigation from './components/Navigation/Navigation';
 import Display from './components/Display/Display';
 import SearchInput from './components/SearchInput/SeachInput';
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 function App() {
 
   const [ searchInput, setSearchInput ] = useState('')
   const [ getData, setGetData ] = useState([])
   const [ display, setDisplay ] = useState([])
+  const theme = useContext(themeContext)
 
   const updateSearch = (e) => {
     setSearchInput(e.target.value)
