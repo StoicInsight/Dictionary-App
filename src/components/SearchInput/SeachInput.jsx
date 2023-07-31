@@ -1,6 +1,6 @@
 import React from 'react'
 import './search-input.css'
-import { ReactComponent as SearchIcon } from '../../assets/images/icon-search.svg'
+import searchIcon from '../../assets/images/icon-search.svg'
 
 const SeachInput = ({ search, submit }) => {
   return (
@@ -11,7 +11,7 @@ const SeachInput = ({ search, submit }) => {
         placeholder='Search dictionary...'
         onChange={search}
         />
-        <SearchIcon className='search-icon'/> 
+        <img src={searchIcon} className='search-img' alt="" />
       </form>
 
     </div>

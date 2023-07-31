@@ -9,7 +9,6 @@ function App() {
   const [ searchInput, setSearchInput ] = useState('')
   const [ getData, setGetData ] = useState([])
   const [ display, setDisplay ] = useState([])
-  const theme = useContext(themeContext)
 
   const updateSearch = (e) => {
     setSearchInput(e.target.value)
